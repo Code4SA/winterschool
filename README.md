@@ -23,6 +23,7 @@ Setting up the template
 * Install [RVM](http://rvm.io/)
 * Install Jekyll ``bundle install``
 * Edit ``_config.yml`` and set ``google_analytics_id`` correctly
+* Run Jekyll: ``jekyll serve --watch``
 
 Using the template
 ------------------
