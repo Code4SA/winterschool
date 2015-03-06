@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="/css/app.css">
+
+    {% for css in page.extra_stylesheets %}
+      <link rel="stylesheet" href="{{ css }}"></script>
+    {% endfor %}
   </head>
   <body>
     {{ content }}
@@ -28,5 +32,9 @@
       ga('create', '{{ page.google_analytics_id }}', 'auto');
       ga('send', 'pageview');
     </script>
+
+    {% for js in page.extra_js %}
+      <script src="{{ js }}"></script>
+    {% endfor %}
   </body>
 </html>
