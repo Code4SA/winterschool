@@ -7,55 +7,55 @@
     <meta name="description" content="Another civic tech project by Code for South Africa">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="/css/bootstrap-lumen.min.css">
+    <link rel="stylesheet" href="/css/code4sa-custom-bootstrap.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="/css/code4sa.css">
-    <link rel="stylesheet" href="/css/app.css">
 
     {% for css in page.extra_stylesheets %}
     <link rel="stylesheet" href="{{ css }}"></script>
     {% endfor %}
   </head>
   <body>
-    <div class="navbar navbar-default navbar-transparent">
+    <div class="navbar navbar-inverse navbar-transparent">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <a class="navbar-brand" href="/">
-            <img src="/img/logo-horizontal.png" alt="Code for South Africa"></a>
+          <a class="navbar-brand" href="http://code4sa.org">
+            Winter School
           </a>
         </div>
 
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="#winter-school">Winter School</a>
-            </li>
-            <li>
-              <a href="#code4sa">About Code4SA</a>
-            </li>
-            <li>
-              <a href="#join-us">Join us</a>
-            </li>
-            <li>
-              <a href="#FAQ">FAQ</a>
-            </li>
-          </ul>
-
+        <div class="navbar-right">
+          <a href="http://code4sa.org/" class="navbar-brand-secondary">
+            <img src="img/code4sa_logo.png">
+          </a>
         </div>
+
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#join-us">Join us</a>
+          </li>
+        </ul>
       </div>
     </div>
 
     {{ content }}
 
-    <footer>
-    </footer>
+    <footer class="foot">
+			<div class="foot-content clearfix">
+
+				<div class="col-md-2 col-md-offset-1">
+					<img src="img/code4sa_logo_white.png">
+				</div>
+
+				<div class="col-md-8">
+					<p>
+						Code for South Africa is a non-profit organisation registered with the South African Department of Social Development, number 133-850NPO.
+						<br>
+						Licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>
+					</p>
+				</div>
+
+			</div>
+		</footer>
 
     <script src="//cdn.jsdelivr.net/g/jquery@1.11.2"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
