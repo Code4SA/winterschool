@@ -36,3 +36,4 @@ build/
 .rvmrc
 
 .sass-cache/
+bower/
